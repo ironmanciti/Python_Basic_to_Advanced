@@ -1,0 +1,42 @@
+{% extends "base.html" %}
+{% block title %}천지선공 찾아오는길{% endblock%}
+{% block content %}
+
+  <header id="page-header">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 m-auto text-center">
+            <!-- <h2>연락처를 남겨 주세요.</h2> -->
+          </div>
+        </div>
+      </div>
+  </header>
+
+  <section id="contact" class="py-3">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+            <div class="card p-4">
+            <div class="card-header">
+              <h3>전화로 상담/문의 가능합니다.</h3><br>
+              <i class="fa fa-phone" style="font-size: 35px"></i>
+              <span style="font-size: 35px">010-8772-4070</span> 
+              <h4>(김윤정 사범)</h>
+            </div>
+            <div class="card-body">
+              <h1>찾아오시는 길</h1><br>
+              <h2>(경복궁 본원)</h2><br>
+              <h4>서울특별시 종로구 사직로 97, 6층(새마을금고빌딩)</h4>
+              <div>
+                <a href="/static/img/map_new.jpg" data-toggle="lightbox" class="d-block mb-4 h-400">
+                  <img class="img-fluid img-thumbnail" src="/static/img/map_new.jpg" alt="">
+                </a>
+              </div>
+            </div>
+          </div>
+
+      </div>
+    </div>
+  </section>
+
+  {% endblock %}
