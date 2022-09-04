@@ -12,11 +12,14 @@ root.option_add("*Font", "맑은고딕 20")
 root.config(bg="black")  # 배경색 설정
 
 def lotto():
+    #LOTTO site 접속
     req = Request(URL, headers=hdr)
     page = urlopen(req)
+    #웹페이지 파싱
     html = BeautifulSoup(page, "html.parser")
     txt = html.find("div", attrs={"class": "win_result"}).get_text()
     txt = txt.split('\n')
+    #LOTTO 당첨번호 표시
     lotto_label = Label(root)
     lotto_label.config(text="당첨번호 {}, 보너스 {}".format(txt[7:13], txt[-4]))
     # lotto_label.grid(row=1, column=1)
